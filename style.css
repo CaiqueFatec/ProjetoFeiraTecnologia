@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #f37507;
+}
+
+.grid-conteiner {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "left main main main main right"
+    "footer footer footer footer footer footer";
+  gap: 10px;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-image: url(images/Logo-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.main {
+  grid-area: main;
+  background-color: blanchedalmond;
+  padding: 10px;
+  margin: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  position: bottom;
+  margin: 0;
+}
+
+.slide {
+  width: 70%;
+  padding: 20px;
+  background: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 0 auto;
+}
+
+.pagina {
+  width: 110px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 50px;
+  transition: width 0.5s;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagina img {
+  width: 80%;
+  height: auto;
+  border-radius: 50px;
+  padding: 20px;
+  
+}
+
+.pagina p{
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.pagina:hover{
+  width: 300px;
+}
+
+.pagina:nth-child(odd){
+  background: linear-gradient(-229deg, rgb(30, 255, 0), rgb(17,30, 218));
+}
+
+.pagina:nth-child(even){
+  background: linear-gradient(-229deg, rgb(155, 77, 28), rgb(17,30, 218));
+}
+
